@@ -10,11 +10,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-//test message on root
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-})
 
 //display results page (ejs)
 app.post('/getData', (req, res) => {
