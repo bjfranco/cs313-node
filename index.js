@@ -7,4 +7,5 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/prove09' , (req, res) => res.sendFile(__dirname + '/public/prove09-postal.html'));
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
