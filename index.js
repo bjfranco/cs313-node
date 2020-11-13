@@ -12,8 +12,8 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/prove09' , (req, res) => res.sendFile(__dirname + '/public/prove09-postal.html'))
-  .use(bodyParser.urlencoded({ extended: false }));
-  .use(bodyParser.json());
+  .use(bodyParser.urlencoded({ extended: false }))
+  .use(bodyParser.json())
   .post('/getData', (req, res) => {
 
 	//get the post values from the html form
