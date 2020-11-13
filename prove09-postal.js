@@ -12,7 +12,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/prove09' , (req, res) => res.sendFile(__dirname + '/public/prove09-postal.html'));
+//app.get('/prove09' , (req, res) => res.sendFile(__dirname + '/public/prove09-postal.html'));
 
 //display results page (ejs)
 app.post('/getData', (req, res) => {
