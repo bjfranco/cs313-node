@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postal Form</title>
+</head>
+<body>
+	<header>
+		<h1>Postal Form</h1>
+	</header>
+	<div>
+		<form action="/getData" method="POST">
+			<label for="weight">Postage Weight (oz):</label><br>
+			<input type="number" name="weight" id="weight"><br>
+
+			<input type="radio" name="mail" id="letters" value="Letters (Stamped)">
+			<label for="letters">Letters (Stamped)</label><br>
+
+			<input type="radio" name="mail" id="letterm" value="Letters (Metered)">
+			<label for="letterm">Letters (Metered)</label><br>
+
+			<input type="radio" name="mail" id="large" value="Large Envelopes (Flats)">
+			<label for="large">Large Envelopes (Flats)</label><br>
+
+			<input type="radio" name="mail" id="first" value="First-Class Package Services-Retail">
+			<label for="first">First-Class Package Services-Retail</label><br>
+
+			<input type="submit" name="submit" id="submit">
+		</form>
+	</div>
+
+</body>
+</html>
