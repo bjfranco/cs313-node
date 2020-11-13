@@ -2,6 +2,7 @@ const express = require("express");
 const path = require('path');
 const URL = require('url');
 const bodyParser = require("body-parser");
+const PORT = process.env.PORT || 5000;
 
 var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
@@ -130,6 +131,7 @@ function calculateRate(weight, mail){
 }
 
 //listen on port
-app.listen(app.get('port'), function() {
+/*app.listen(app.get('port'), function() {
 	console.log('Listening on port', app.get('port'));
-});
+});*/
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
